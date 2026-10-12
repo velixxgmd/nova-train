@@ -133,7 +133,7 @@ set_blas_threads(int(os.environ.get("OPENBLAS_NUM_THREADS", "4")))
 # --------------------------------------------------------------------------
 # TRAINING SETTINGS (safe to edit)
 # --------------------------------------------------------------------------
-EPOCHS = 1000                    # Number of training epochs (default: 3)
+EPOCHS = 3000                    # Number of training epochs (default: 3)
 BATCH_SIZE = 64              # Mini-batch size (default: 64)
 DISPLAY_EVERY = 1            # Show progress every N steps (default: live every step)
 VALIDATION_EVERY = 1         # Run validation every N epochs (default: 1 = every epoch)
@@ -199,12 +199,12 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 # ====================================================================
 TRAINING_FILES_USER: list[str] = [
     # --- examples (uncomment and edit, or add your own lines below) ---
-     r"C:\Users\DELL\Desktop\nova\src\Final model\training data.txt",
-     r"C:\Users\DELL\Desktop\nova\src\Final model\training data2.txt",
-     r"C:\Users\DELL\Desktop\nova\src\Final model\training_data3.txt",
-     r"C:\Users\DELL\Desktop\nova\src\Final model\training_data4.txt",
-     r"C:\Users\DELL\Desktop\nova\src\Final model\training_data5.txt",
-     r"C:\Users\DELL\Desktop\nova\src\Final model\training_data6.txt",
+    # r"C:\Users\DELL\Desktop\nova\src\Final model\training data.txt",
+     #r"C:\Users\DELL\Desktop\nova\src\Final model\training data2.txt",
+    # r"C:\Users\DELL\Desktop\nova\src\Final model\training_data3.txt",
+    # r"C:\Users\DELL\Desktop\nova\src\Final model\training_data4.txt",
+    # r"C:\Users\DELL\Desktop\nova\src\Final model\training_data5.txt",
+    # r"C:\Users\DELL\Desktop\nova\src\Final model\training_data6.txt",
     # "training_data6.txt",                # newer dataset in this folder
     # r"D:\novadata\sci_fi_corpus.txt",   # dataset anywhere on disk
 ]
